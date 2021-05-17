@@ -72,7 +72,7 @@ If you use this program in your research then please cite:
 ```bash
 M. Kuramata, A. Watanabe, K. Majima, H. Kiyohara, M. Iwata, K. Kondo, K. Nakata, 
 CGA2M+ Package. (2021) [Online].
-Available: https://wahaha.github.io
+Available: https://github.com/MK-tech20/CGA2M_plus
 ```
 # Reference
 [1] Friedman, J. H. 2001, Greedy function approximation: a gradient boosting machine, Annals of statistics, 1189-1232, doi: 10.1214/aos/1013203451. Available online: May 02, 2021
