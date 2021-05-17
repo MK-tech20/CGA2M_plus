@@ -12,7 +12,7 @@ Mainly, CGA2M+ differs from GA2M in two respects. We are using LightGBM as a sha
 By adding monotonicity, we can improve the interpretability of our model. For example, we can make sure that "in the real estate market, as the number of rooms increases, the price decreases" does not happen. Human knowledge is needed to determine which features to enforce monotonicity on. The monotonicity constraint algorithm is implemented in LightGBM. This is a way to constrain the branches of a tree. For more details, please refer to the LightGBM implementation.
 
 ![Algorithm](images/constraint.png)   
-
+![Algorithm2](https://github.com/MK-tech20/CGA2M_plus/blob/main/images/algorithm.png)
 - introducing higher-order interactions keeping the interpretability of the model
 GGA2M is unable to take into account higher-order interactions. Therefore, we introduce higher-order terms that are not interpretable. However, we devise a learning method so that the higher-order terms do not compromise the overall interpretability. Specifically, we train the higher-order terms as models that predict the residuals of the univariate terms and pairwise interaction terms. This allows most of the predictions to be explained by the interpretable first and second order terms. These residuals are then predicted by a higher-order term.
 
