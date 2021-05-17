@@ -5,7 +5,16 @@ description = "CGA2M_plus is a Python package of Constraint GA2M plus(CGA2M+). C
 authors = ["M. Kuramata <baisgtud43j@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/MK-tech20"
+repository = "https://github.com/MK-tech20/CGA2M_plus"
 
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 [tool.poetry.dependencies]
 python = "^3.7"
 lightgbm = "^3.2.1"
