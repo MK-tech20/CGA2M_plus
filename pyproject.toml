@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "CGA2M_plus"
-version = "0.1.0"
+version = "0.1.2"
 description = "CGA2M_plus is a Python package of Constraint GA2M plus(CGA2M+). CGA2M+ is a model that improves GA2M in two respects: interpretability and accuracy."
 authors = ["M. Kuramata <baisgtud43j@gmail.com>"]
 license = "MIT"
