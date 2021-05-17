@@ -26,6 +26,8 @@ pip install CGA2M_plus
 ```
 
 # Usage
+For more detail, please read `examples/How_to_use_CGA2M+.ipynb`.
+
 ## Training
 
 ```python
@@ -62,7 +64,6 @@ plot_interaction(cga2m_no1,X_train,mode = "3d")
 show_importance(cga2m_no1,after_prune=True,higher_mode=True)
 ```
 ![feature importance](images/feature_importance.png) 
-For more detail, please read `examples/How_to_use_CGA2M+.ipynb`.
 # License
 MIT License
 # Caution
