@@ -310,7 +310,7 @@ class Constraint_GA2M:
         """
         count = 0
         for __ in range(max_outer_iteration):
-            print(f"START {__+1}ST ITERATION")
+            print(f"START {__+1}th ITERATION")
             self.backfitting(
                 num_iteration=backfitting_iteration,
                 use_main_features=self.use_main_features,
