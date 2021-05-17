@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/blob/main/images/cga2m_plus%2B.png) 
+![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/cga2m_plus%2B.png) 
 # CGA2M+ (Constraint GA2M plus)
 We propose Constraint GA2M plus (CGA2M+), which we proposed. CGA2M+ is a modified version of GA2M to improve its interpretability and accuracy.
 For more information, please read our paper.(coming soon!!) 
@@ -11,13 +11,13 @@ Mainly, CGA2M+ differs from GA2M in two respects. We are using LightGBM as a sha
 - introducing monotonic constraints
 By adding monotonicity, we can improve the interpretability of our model. For example, we can make sure that "in the real estate market, as the number of rooms increases, the price decreases" does not happen. Human knowledge is needed to determine which features to enforce monotonicity on. The monotonicity constraint algorithm is implemented in LightGBM. This is a way to constrain the branches of a tree. For more details, please refer to the LightGBM implementation.
 
-![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/blob/main/images/constraint.png)   
+![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/constraint.png)   
 
 - introducing higher-order interactions keeping the interpretability of the model
 GGA2M is unable to take into account higher-order interactions. Therefore, we introduce higher-order terms that are not interpretable. However, we devise a learning method so that the higher-order terms do not compromise the overall interpretability. Specifically, we train the higher-order terms as models that predict the residuals of the univariate terms and pairwise interaction terms. This allows most of the predictions to be explained by the interpretable first and second order terms. These residuals are then predicted by a higher-order term.
 
 # Algorithm  
-![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/blob/main/images/algorithm.png)
+![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/algorithm.png)
 For more information, please read our paper. (coming soon!!) 
 # Installation(coming soon)
 You can get CGA2M+ from PyPI.
@@ -52,18 +52,18 @@ cga2m.predict(X_test,higher_mode=True)
 ```python
 plot_main(cga2m_no1,X_train)
 ```
-![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/blob/main/images/plot_main.png) 
+![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/plot_main.png) 
 
 ## Visualize (3d) the effect of pairs of features on the target variables
 ```python
 plot_interaction(cga2m_no1,X_train,mode = "3d")
 ```
-![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/blob/main/images/plot_pairs.png) 
+![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/plot_pairs.png) 
 ## Feature importance
 ```python
 show_importance(cga2m_no1,after_prune=True,higher_mode=True)
 ```
-![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/blob/main/images/feature_importance.png) 
+![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/feature_importance.png) 
 # License
 MIT License
 # Caution
