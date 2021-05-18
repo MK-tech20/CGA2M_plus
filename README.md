@@ -67,7 +67,7 @@ show_importance(cga2m_no1,after_prune=True,higher_mode=True)
 # License
 MIT License
 # Citation
-You may use our package(CGA2M+) under the MIT license. 
+You may use our package(CGA2M+) under MIT License. 
 If you use this program in your research then please cite:
 
 **CGA2M+ Package**  
