@@ -66,15 +66,20 @@ show_importance(cga2m_no1,after_prune=True,higher_mode=True)
 ![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/feature_importance.png) 
 # License
 MIT License
-# Caution
-You may use our package(CGA2M+) under the MIT license. If you use our package CGA2M+ or create something based on our package, please cite our paper.
-# Author
+# Citation
+You may use our package(CGA2M+) under the MIT license. 
 If you use this program in your research then please cite:
+
+**CGA2M+ Package**  
 ```bash
 M. Kuramata, A. Watanabe, K. Majima, H. Kiyohara, M. Iwata, K. Kondo, K. Nakata, 
 CGA2M+ Package. (2021) [Online].
 Available: https://github.com/MK-tech20/CGA2M_plus
 ```
+
+**CGA2M+ Paper**  
+The paper has not been published yet. 
+
 # Reference
 [1] Friedman, J. H. 2001, Greedy function approximation: a gradient boosting machine, Annals of statistics, 1189-1232, doi: 10.1214/aos/1013203451. Available online: May 02, 2021
 
