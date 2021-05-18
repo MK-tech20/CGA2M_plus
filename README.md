@@ -27,7 +27,7 @@ pip install CGA2M_plus
 
 # Usage
 For more detail, please read `examples/How_to_use_CGA2M+.ipynb`.
-
+If it doesn't render at all in github, please click [here](https://kokes.github.io/nbviewer.js/viewer.html#aHR0cHM6Ly9naXRodWIuY29tL01LLXRlY2gyMC9DR0EyTV9wbHVzL2Jsb2IvbWFpbi9leGFtcGxlcy9Ib3dfdG9fdXNlX0NHQTJNJTJCLmlweW5i).
 ## Training
 
 ```python
