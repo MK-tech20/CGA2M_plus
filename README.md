@@ -19,10 +19,10 @@ GGA2M is unable to take into account higher-order interactions. Therefore, we in
 # Algorithm  
 ![](https://raw.githubusercontent.com/MK-tech20/CGA2M_plus/main/images/algorithm.png)
 For more information, please read our paper. (coming soon!!) 
-# Installation(coming soon)
-You can get CGA2M+ from PyPI.
+# Installation
+You can get CGA2M+ from PyPI. Our project in PyPI is [here](https://pypi.org/project/cga2m-plus/).
 ```bash
-pip install CGA2M_plus
+pip install cga2m-plus
 ```
 
 # Usage
