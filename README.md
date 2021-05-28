@@ -76,7 +76,7 @@ If you use this program in your research then please cite:
 ```bash
 @misc{kuramata2021cga2mplus,
   author = {Michiya, Kuramata and Akihisa, Watanabe and Kaito, Majima and Kensyo, Kondo and Kazuhide, Nakata},
-  title = {d3rlpy: An offline deep reinforcement library},
+  title = {Constraint GA2M plus},
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
