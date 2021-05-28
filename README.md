@@ -74,9 +74,14 @@ If you use this program in your research then please cite:
 
 **CGA2M+ Package**  
 ```bash
-M. Kuramata, A. Watanabe, K. Majima, H. Kiyohara, M. Iwata, K. Kondo, K. Nakata, 
-CGA2M+ Package. (2021) [Online].
-Available: https://github.com/MK-tech20/CGA2M_plus
+@misc{kuramata2021cga2mplus,
+  author = {Michiya, Kuramata and Akihisa, Watanabe and Kaito, Majima and Kensyo, Kondo and Kazuhide, Nakata},
+  title = {d3rlpy: An offline deep reinforcement library},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/MK-tech20/CGA2M_plus}}
+}
 ```
 
 **CGA2M+ Paper**  
