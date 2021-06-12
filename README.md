@@ -86,7 +86,15 @@ If you use this program in your research then please cite:
 ```
 
 **CGA2M+ Paper**  
-The paper has not been published yet. 
+```python
+@article{watanabe2021cga2mplus,
+  title={Constrained Generalized Additive 2 Model with Consideration of High-Order Interactions},
+  author={Akihisa, Watanabe and Michiya, Kuramata and Kaito, Majima 
+            and Haruka, Kiyohara and Kensyo, Kondo and Kazuhide, Nakata},
+  journal={arXiv preprint arXiv:2106.02836},
+  year={2021}
+}
+```
 
 # Reference
 [1] Friedman, J. H. 2001, Greedy function approximation: a gradient boosting machine, Annals of statistics, 1189-1232, doi: 10.1214/aos/1013203451. Available online: May 02, 2021
