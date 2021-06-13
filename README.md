@@ -85,7 +85,7 @@ If you use this program in your research then please cite:
 }
 ```
 
-**CGA2M+ Paper**  
+**CGA2M+ Paper** [ [link](https://arxiv.org/abs/2106.02836) ]  
 ```python
 @article{watanabe2021cga2mplus,
   title={Constrained Generalized Additive 2 Model with Consideration of High-Order Interactions},
