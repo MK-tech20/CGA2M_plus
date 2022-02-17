@@ -86,7 +86,7 @@ If you use this program in your research then please cite:
 ```
 
 **CGA2M+ Paper** [ [link](https://ieeexplore.ieee.org/document/9698779) ]  
-```python
+```bash
 @INPROCEEDINGS{9698779,
   author={Watanabe, Akihisa and Kuramata, Michiya and Majima, Kaito and Kiyohara, Haruka and Kensho, Kondo and Nakata, Kazuhide},
   booktitle={2021 International Conference on Electrical, Computer and Energy Technologies (ICECET)}, 
