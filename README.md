@@ -85,15 +85,17 @@ If you use this program in your research then please cite:
 }
 ```
 
-**CGA2M+ Paper** [ [link](https://arxiv.org/abs/2106.02836) ]  
+**CGA2M+ Paper** [ [link](https://ieeexplore.ieee.org/document/9698779) ]  
 ```python
-@article{watanabe2021cga2mplus,
-  title={Constrained Generalized Additive 2 Model with Consideration of High-Order Interactions},
-  author={Akihisa, Watanabe and Michiya, Kuramata and Kaito, Majima 
-            and Haruka, Kiyohara and Kensyo, Kondo and Kazuhide, Nakata},
-  journal={arXiv preprint arXiv:2106.02836},
-  year={2021}
-}
+@INPROCEEDINGS{9698779,
+  author={Watanabe, Akihisa and Kuramata, Michiya and Majima, Kaito and Kiyohara, Haruka and Kensho, Kondo and Nakata, Kazuhide},
+  booktitle={2021 International Conference on Electrical, Computer and Energy Technologies (ICECET)}, 
+  title={Constrained Generalized Additive 2 Model With Consideration of High-Order Interactions}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/ICECET52533.2021.9698779}}
 ```
 
 # Reference
