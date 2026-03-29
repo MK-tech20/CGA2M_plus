@@ -134,6 +134,7 @@ dmypy.json
 
 # Claude Code
 .claude/
+CLAUDE.md
 
 # Paper PDFs
 paper/
