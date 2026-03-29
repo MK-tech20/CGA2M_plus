@@ -214,7 +214,10 @@ class Constraint_GA2M:
                 tmp_params["monotone_constraints"] = self.monotone_constraints[i]
 
                 model = lgb.train(
-                    tmp_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False
+                    tmp_params,
+                    lgb_train,
+                    valid_sets=lgb_eval,
+                    callbacks=[lgb.log_evaluation(period=0)],
                 )
 
                 pred_train = model.predict(
@@ -273,7 +276,10 @@ class Constraint_GA2M:
                 ]
 
                 model = lgb.train(
-                    tmp_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False
+                    tmp_params,
+                    lgb_train,
+                    valid_sets=lgb_eval,
+                    callbacks=[lgb.log_evaluation(period=0)],
                 )
 
                 pred_train_int = model.predict(
@@ -353,7 +359,10 @@ class Constraint_GA2M:
 
                 tmp_params = copy.deepcopy(self.lgbm_params)
                 model = lgb.train(
-                    tmp_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False
+                    tmp_params,
+                    lgb_train,
+                    valid_sets=lgb_eval,
+                    callbacks=[lgb.log_evaluation(period=0)],
                 )
 
                 preds_train = (
@@ -614,7 +623,10 @@ class Constraint_GA2M:
 
         tmp_params = copy.deepcopy(self.lgbm_params)
         model = lgb.train(
-            tmp_params, lgb_train, valid_sets=lgb_eval, verbose_eval=False
+            tmp_params,
+            lgb_train,
+            valid_sets=lgb_eval,
+            callbacks=[lgb.log_evaluation(period=0)],
         )
 
         self.higher_model = model

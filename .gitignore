@@ -131,3 +131,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Claude Code
+.claude/
+
+# Paper PDFs
+paper/
+
+# Logo generation script
+generate_logo.py

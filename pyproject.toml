@@ -1,29 +1,43 @@
-[tool.poetry]
+[project]
 name = "CGA2M_plus"
-version = "0.1.10"
+version = "0.1.11"
 description = "CGA2M_plus is a Python package of Constraint GA2M plus(CGA2M+). CGA2M+ is a model that improves GA2M in two respects: interpretability and accuracy."
-authors = ["Michiya, Kuramata <baisgtud43j@gmail.com>"]
-license = "MIT"
+authors = [
+    {name = "Michiya, Kuramata", email = "baisgtud43j@gmail.com"}
+]
+license = {text = "MIT"}
 readme = "README.md"
-homepage = "https://github.com/MK-tech20"
-repository = "https://github.com/MK-tech20/CGA2M_plus"
-
+requires-python = ">=3.10"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.7",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
-[tool.poetry.dependencies]
-python = "^3.7"
-lightgbm = "^3.2.1"
-numpy = "scikit-learn"
-matplotlib = "^3.4.2"
-seaborn = "^0.11.1"
+dependencies = [
+    "lightgbm>=3.2.1",
+    "numpy>=1.21",
+    "scikit-learn>=1.0",
+    "matplotlib>=3.4.2",
+    "seaborn>=0.11.1",
+]
 
-[tool.poetry.dev-dependencies]
+[project.urls]
+Homepage = "https://github.com/MK-tech20"
+Repository = "https://github.com/MK-tech20/CGA2M_plus"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cga2m_plus"]
+
+[dependency-groups]
+dev = [
+    "hatchling>=1.29.0",
+    "ipykernel>=7.2.0",
+    "jupyterlab>=4.5.6",
+    "pytest>=9.0.2",
+    "ruff>=0.15.8",
+]
