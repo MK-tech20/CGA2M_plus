@@ -1,11 +1,9 @@
 import matplotlib.pyplot as plt
 from matplotlib import cm
-from mpl_toolkits.mplot3d import axes3d
 import seaborn as sns
 import numpy as np
 import pandas as pd
 import copy
-import itertools
 
 
 def plot_main(ga2m, X):
@@ -157,7 +155,7 @@ def plot_interaction_3d(ga2m, X):
             num_iteration=ga2m.interaction_model_dict[(i, j)].best_iteration,
         )
 
-        cp = axs.plot_surface(
+        axs.plot_surface(
             a, b, preds.reshape(a.shape), rstride=1, cstride=1, cmap=cm.coolwarm
         )
 
@@ -189,7 +187,7 @@ def show_importance(ga2m, after_prune=True, higher_mode=False):
     else:
         tmp_dict = copy.deepcopy(ga2m.before_feature_importance_)
 
-    if higher_mode == False:
+    if not higher_mode:
         del tmp_dict["higher"]
 
     impact_df = pd.DataFrame(

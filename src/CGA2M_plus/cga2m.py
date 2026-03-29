@@ -107,9 +107,9 @@ class Constraint_GA2M:
             self.monotone_constraints = [0] * self.X_train.shape[1]
         else:
             self.monotone_constraints = monotone_constraints
-            self.lgbm_params[
-                "monotone_constraints_method"
-            ] = monotone_constraints_method
+            self.lgbm_params["monotone_constraints_method"] = (
+                monotone_constraints_method
+            )
 
         self.higher_model = None
         self.use_main_features = list(range(X_test.shape[1]))
@@ -191,9 +191,9 @@ class Constraint_GA2M:
                     train_sum = train_sum + main_store_train[ll]
                     test_sum = test_sum + main_store_test[ll]
 
-                for k, l in use_interaction_features:
-                    train_sum = train_sum + interaction_store_train[(k, l)]
-                    test_sum = test_sum + interaction_store_test[(k, l)]
+                for k, l_idx in use_interaction_features:
+                    train_sum = train_sum + interaction_store_train[(k, l_idx)]
+                    test_sum = test_sum + interaction_store_test[(k, l_idx)]
 
                 residual_train = copy.deepcopy(y_train) - train_sum
                 residual_test = copy.deepcopy(y_test) - test_sum
@@ -235,7 +235,11 @@ class Constraint_GA2M:
                 interaction_store_train = copy.deepcopy(interaction_store_train)
                 interaction_store_test = copy.deepcopy(interaction_store_test)
 
-                tmp = [(k, l) for k, l in use_interaction_features if (k, l) != (i, j)]
+                tmp = [
+                    (k, l_idx)
+                    for k, l_idx in use_interaction_features
+                    if (k, l_idx) != (i, j)
+                ]
 
                 train_sum = np.zeros(X_train.shape[0])
                 test_sum = np.zeros(X_test.shape[0])
@@ -310,7 +314,7 @@ class Constraint_GA2M:
         """
         count = 0
         for __ in range(max_outer_iteration):
-            print(f"START {__+1}th ITERATION")
+            print(f"START {__ + 1}th ITERATION")
             self.backfitting(
                 num_iteration=backfitting_iteration,
                 use_main_features=self.use_main_features,
@@ -528,7 +532,7 @@ class Constraint_GA2M:
         self.use_interaction_features = []
 
         for key in self.meaningful_features.keys():
-            if type(key) == type(int(1)):
+            if isinstance(key, int):
                 self.use_main_features.append(key)
             else:
                 self.use_interaction_features.append(key)
